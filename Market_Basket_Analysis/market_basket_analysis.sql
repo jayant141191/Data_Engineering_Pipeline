@@ -1,4 +1,9 @@
+--Note: Below query is written against PostgresSQL DB 9.6
+
+--Task: Create an SQL query will show a list of products frequently purchased with the top 10 bestsellers
+
 DROP TABLE IF EXISTS bestseller_prod_info;
+--Get bestseller products information for top 10 products
 CREATE TEMP TABLE bestseller_prod_info AS (
 
 SELECT 
@@ -26,6 +31,7 @@ ON
 
 
 DROP TABLE IF EXISTS prod_purchased_with_bestseller_prod;
+--Get the products bought with bestseller products 
 CREATE TEMP TABLE prod_purchased_with_bestseller_prod AS (
 
 SELECT 
@@ -44,6 +50,7 @@ WHERE
 );
 
 DROP TABLE IF EXISTS transactions_per_prod;
+--Get the number of transactions in which each product occurred 
 CREATE TEMP TABLE transactions_per_prod AS (
 
 SELECT 
@@ -56,6 +63,7 @@ GROUP BY
 );
 
 DROP TABLE IF EXISTS no_of_occurrences_a_and_b;
+--Get the number of occurrences/transactions in which ProductA and ProductB were bought together  
 CREATE TEMP TABLE no_of_occurrences_a_and_b AS (
 
 SELECT 
@@ -71,6 +79,7 @@ GROUP BY
 );
 
 DROP TABLE IF EXISTS metrics;
+--Get all the information/metrics required to calculate support, confidence and lift_ratio
 CREATE TEMP TABLE metrics AS (
 
 SELECT 
@@ -102,6 +111,8 @@ CROSS JOIN
 );
 
 
+--Calculate support, confidence, lift_ratio and display the analysis i.e items frequently purchased with bestseller products 
+--for conditions specified in where clause below  
 SELECT 
       *
 FROM ( 
