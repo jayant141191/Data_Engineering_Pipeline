@@ -29,9 +29,9 @@ The answer to this question is stored in Visitor_Assignment_ETL_process/visitor_
 visitor_assign_log_parser.py script parses the log then extracts relevant information and inserts data into data table created
 
 3) Write the SQL queries that will help answer the questions A and B as below:
-A) What are the total number users assigned to the “Test” and “Control” groups in each
+* A) What are the total number users assigned to the “Test” and “Control” groups in each
 experiment?
-B) Which day had the highest number of user group assignments per experiment?
+* B) Which day had the highest number of user group assignments per experiment?
 
 The answer to this question is stored in Visitor_Assignment_ETL_process/analysis_queries.sql
 ### Note: 
