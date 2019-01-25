@@ -18,10 +18,13 @@ bestsellers
 ### Formuale's Used for Market Basket Analysis
 **Support**
 ```
-Support(A) = P(A) = No of Transactions where ProductA was bought
+Support(A) = P(A) = no of transactions where ProductA was bought / total no of transactions 
+Support(B) = P(B) = no of transactions where ProductB was bought / total no of transactions 
 ```
 **Confidence**
-
+```
+Confidence(B -> A) = Support of B and A / Support of B
+```
 ## Question 3 
 
 1) Write an SQL script to create a data table to store the visitor assignment data
