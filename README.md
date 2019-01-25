@@ -3,7 +3,7 @@
 Below are the instructions describing which directory contains answers to which coding challenge and also any additional required documentation. 
 
 # Note
-All SQL queries have been written for PostgresSQL DB
+All SQL queries have been written for PostgreSQL DB
 
 # Coding Challenge
 
