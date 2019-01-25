@@ -16,6 +16,10 @@ bestsellers
 * The answer to this question is stored in **Market_Basket_Analysis/market_basket_analysis.sql**
 
 ### Formuale's Used for Market Basket Analysis
+**Note -** Here 
+**ProductA** are the bestselling products (top 10)
+**ProductB** are the products frequently purchased with bestselling products
+
 **Support**
 ```
 Support(A) = P(A) = no of transactions where ProductA was bought / total no of transactions 
@@ -23,8 +27,13 @@ Support(B) = P(B) = no of transactions where ProductB was bought / total no of t
 ```
 **Confidence**
 ```
-Confidence(B -> A) = Support of B and A / Support of B
+Confidence(B -> A) = Support of B and A / Support of A
 ```
+**Lift Ratio**
+```
+Lift Ratio = Confidence / Support of B 
+```
+
 ## Question 3 
 
 1) Write an SQL script to create a data table to store the visitor assignment data
