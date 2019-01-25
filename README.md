@@ -3,7 +3,8 @@
 Below are the instructions describing which directory contains answers to which coding challenge and also any additional required documentation. 
 
 # Note
-All SQL queries have been written for PostgreSQL DB
+* All **SQL** queries have been written for **PostgreSQL DB**
+* For running the python script which is inside **Visitor_Assignment_ETL_process** directory for that first install dependencies mentioned in **requirements.txt** which is in the same directory as python script. You can install that using pip
 
 # Coding Challenge
 
