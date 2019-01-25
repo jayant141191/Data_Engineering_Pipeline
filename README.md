@@ -15,6 +15,13 @@ bestsellers
 
 * The answer to this question is stored in **Market_Basket_Analysis/market_basket_analysis.sql**
 
+### Formuale's Used for Market Basket Analysis
+**Support**
+```
+Support(A) = P(A) = No of Transactions where ProductA was bought
+```
+**Confidence**
+
 ## Question 3 
 
 1) Write an SQL script to create a data table to store the visitor assignment data
