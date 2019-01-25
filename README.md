@@ -17,8 +17,8 @@ bestsellers
 
 ### Formuale's Used for Market Basket Analysis
 **Note -** Here 
-**ProductA** are the bestselling products (top 10)
-**ProductB** are the products frequently purchased with bestselling products
+* **ProductA** are the bestselling products (top 10)
+* **ProductB** are the products frequently purchased with bestselling products
 
 **Support**
 ```
